@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!--Title:-->
+
+        <title>Quanta-Dummy-Site</title>
+
+        <!--Import CSS:-->
+
+        <link rel="stylesheet" href="index.css">
+
+        <!--Metadata:-->
+
+        <meta charset="utf-8">
+        <meta name="author" content="Quanta-Dummy-Site">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Import BioRhyme | Font-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap" rel="stylesheet">
+
+         <!--Import Kanit | Font-->
+
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!--Title Region:-->
+
+        <div class="TitleRegion">
+
+            Quanta
+
+        </div>
+
+        <div class="CreateAccount">
+
+            <form action="http://httpbin.org/post" method="post">
+
+                <!--Username Input:-->
+            
+                <p class="UsernameInput">
+                    <label for="Username">Username:</label>
+                    <input type="text" name="Username" placeholder="Your Username..." maxlength="15">
+                </p>
+
+                <!--Identifier Input:-->
+            
+                <p class="IdentifierInput">
+                    <label for="Discriminator">Identifier:</label>
+                    <input type="text" name="Identifier" placeholder="Your identifier (use a 5 digit number)..." onkeypress="return onlyNumberKey(event)" maxlength="5" minlength="5">
+                </p>
+
+                <!--Email Input:-->
+
+                <p class="EmailInput">
+                    <label for="Email">Email:</label>
+                    <input type="text" name="Email" placeholder="Your Email...">
+                </p>
+
+                <!--Password Input:-->
+
+                <p class="PasswordInput">
+                    <label for="Password">Password:</label>
+                    <input type="text" name="Password" placeholder="Your Password..." minlength="8" maxlength="30">
+                </p>
+
+                <!--Gender Input:-->
+
+                <p class="GenderInput">
+                    <label for="Gender">Gender:</label>
+                    <select name="Gender">
+                        <option value=""></option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                        <option>Prefer not to say</option>
+                    </select>
+                </p>
+
+                <!--Tag input:-->
+
+                <p class="TagInput">
+                    <label for="Tags">Tags:</label>
+                    <select name="Tags">
+                        <option value=""></option>
+                        <option>Artist</option>
+                        <option>Biologist</option>
+                        <option>Chemist</option>
+                        <option>Developer</option>
+                        <option>Designer</option>
+                    </select>
+                </p>
+
+                <input type="submit" value="Create Account">
+
+            </form>
+
+        </div>
+        
+        <!--Style:-->
+
+        <style>
+
+            body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #24252a;
+          }
+
+        </style>
+    </body>
+
+    <script>
+
+        function onlyNumberKey(evt) {
+              
+            // Only ASCII character in that range allowed
+
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                return false;
+            return true;
+        }
+
+    </script>
+
+    <script>
+
+        //Working on check to see if all box's are filled...
+
+    </script>
+
+</html>

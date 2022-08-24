@@ -1,0 +1,86 @@
+.CreateAccount {
+    font-family: "Kanit" , sans-serif;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 5%;
+    font-size: 24px;
+
+}
+
+.TitleRegion {
+    color: #edf0f1;
+    font-family: "BioRhyme" , sans-serif;
+    font-size: large;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 5%; 
+}
+
+input[type=text], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input[type="submit"] {
+    width: 6.5%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+select {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.UsernameInput:after {
+    content:" *";
+    color: #990000;
+}
+
+.IdentifierInput:after {
+    content:" *";
+    color: #990000;
+}
+
+.EmailInput:after {
+    content:" *";
+    color: #990000;
+}
+
+.PasswordInput:after {
+    content:" *";
+    color: #990000;
+}
+
+.GenderInput:after {
+    content:" *";
+    color: #990000;
+}
+
+.TagInput:after {
+    content:" *";
+    color: #990000
+}
